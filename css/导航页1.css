@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+p{
+	font: 40px "宋体";
+	color: #FFFFFF;
+	text-align: center;
+	background-color:#3F00A6;
+	
+}
+ul, li {
+	display: block;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	display: block;
+}
+body {
+	justify-content: center;
+	background:url("images/yinyue.jpg");
+}
+.nav {
+    background-color:#3F00A6;
+	height: 80px;
+	width: 100%;
+}
+.menu {
+    width: 1200px;
+    background-color:#3F00A6;
+	height: 80px;
+    margin: 0 auto;
+}
+.menu li {
+    position: relative;
+    float   : left;
+    width: 130px;
+	height: 70px;   
+}
+.menu li a {
+    display: flex;
+    justify-content: center;
+    line-height: 80px;
+    width: 160px;
+    z-index: -1;
+	font-size: 25px;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+.menu li:hover a {
+    background-color:#9058F8;
+}
+.sub {
+    position: absolute;
+    top : 80px;
+    left: 0;
+    width : 160px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+}
+li:hover ul.sub {
+    opacity: 1;
+    height : auto;  
+}
+.sub li {
+    float: none;
+    border-bottom: 1px solid #9058F8;		
+}
+.sub li:hover a {
+    background-color:#3F00A6;
+}
+.sub a {
+    font-size: 25px;
+    color: #FFFFFF;
+    line-height: 3;
+    height: 80px; 
+    width: 160px;  
+}
+
